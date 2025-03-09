@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: #e6e2de;
+    padding: 51px;
+}
+
+.logo {
+    display: flex;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 112px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 52px;
+    list-style: none;
+}
+
+.nav ul li {
+    display: flex;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav ul li a:hover {
+    text-decoration: underline blue;
+}
+.sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    width: 109px;
+    height: 24px;
+    padding: 16px;
+    background-color: #e6e2de;
+}
+
+.sign:hover{
+    background-color: #96C67F;
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    font-weight: 55px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.title {
+    color: black;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    padding-bottom: 16px;
+}
+
+.desc {
+    display: inline-block;
+    justify-content: start;
+    align-items: start;
+    color: #756f6a;
+    padding-bottom: 50px;
+}
+.start{
+    display: flex;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    background: #96C67F;
+    width: 170px;
+    height: 70px;
+}
+
+.hero {
+    display: flex;
+    position: relative;
+}
+
+.hero > .teacher-hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    border-radius: 50%;
+}
+
+
+.play {
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+.rate {
+    border-radius: 20px;
+    background: #fff;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    left: -38%; 
+    transform: translate(-50%, 140%);
+    font-family: Arial, Helvetica, sans-serif;
+}
