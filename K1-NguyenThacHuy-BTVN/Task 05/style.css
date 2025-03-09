@@ -96,7 +96,7 @@ body {
     padding: 28px;
 }
 
-.endban {
+/* .endban {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,7 +109,16 @@ body {
     align-items: center;
     padding-bottom: 32px;
     width: 100%;
+} */
+
+.video-section video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    padding: 32px;
+    overflow: clip;
 }
+
 
 .footer {
     display: flex;

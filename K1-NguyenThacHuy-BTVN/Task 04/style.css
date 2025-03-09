@@ -6,6 +6,7 @@
 }
 
 .container {
+    display: flex;
     background: #E6EAF8;
     padding: 234px 141px 136px 246px;
 }
