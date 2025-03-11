@@ -87,6 +87,7 @@ h1 {
     background: #FBFCFF;
     flex-direction: column;
 }
+
 .user-card:hover {
     box-shadow: 0px 8px 23px 0px rgba(218, 224, 249, 0.70);
 }

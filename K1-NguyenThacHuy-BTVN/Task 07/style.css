@@ -45,12 +45,35 @@
 
 .nav ul li a {
     text-decoration: none;
+    /* display: inline-block; */
+    width: 100%;
+    padding: 12px;
     color: black;
+    transition: all ease-in-out 0.3s;
+    position: relative;
 }
 
-.nav ul li a:hover {
-    text-decoration: underline blue;
+a::after{
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 4px;
+    /* border-radius: 99%; */
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    transform: translateX(0%);
+    transform-origin: right;
+    transition: width ease-in-out 0.5s;
+    background-color: black;
 }
+
+a:hover::after{
+    width: 100%;
+    transform-origin: left;
+    transform:scaleX(1) ;
+}
+
 .sign {
     display: flex;
     justify-content: center;
