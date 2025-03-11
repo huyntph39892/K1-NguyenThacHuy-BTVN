@@ -1,14 +1,36 @@
+@media screen {
+    body {
+        background: linear-gradient(293deg, #E6E6E4 7.23%, #F0E8E2 97.74%);
+    }
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-.container{
-    display: flex;
+.container {
+    display: inline-block;
     justify-content: start;
     align-items: center;
     background-color: #e6e2de;
+    padding: 51px;
+}
+
+.header {
+    display: inline;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 100px;
+}
+
+.title h1 {
+    display: inline;
+    justify-content: flex-start;
+    align-items: center;
     padding: 51px;
 }
 
@@ -53,7 +75,7 @@
     position: relative;
 }
 
-a::after{
+a::after {
     content: '';
     display: inline-block;
     width: 0;
@@ -68,10 +90,10 @@ a::after{
     background-color: black;
 }
 
-a:hover::after{
+a:hover::after {
     width: 100%;
     transform-origin: left;
-    transform:scaleX(1) ;
+    transform: scaleX(1);
 }
 
 .sign {
@@ -85,11 +107,11 @@ a:hover::after{
     background-color: #e6e2de;
 }
 
-.sign:hover{
+.sign:hover {
     background-color: #96C67F;
 }
 
-.banner{
+.banner {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -101,7 +123,7 @@ a:hover::after{
     align-items: center;
     font-weight: 55px;
     font-family: Arial, Helvetica, sans-serif;
-
+    ;
 }
 
 .title {
@@ -120,7 +142,8 @@ a:hover::after{
     color: #756f6a;
     padding-bottom: 50px;
 }
-.start{
+
+.start {
     display: flex;
     border-radius: 6px;
     justify-content: center;
@@ -135,7 +158,7 @@ a:hover::after{
     position: relative;
 }
 
-.hero > .teacher-hero{
+.hero>.teacher-hero {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -154,14 +177,167 @@ a:hover::after{
 }
 
 .rate {
+    display: inline-block;
     border-radius: 20px;
     background: #fff;
-    justify-content: center;
-    align-items: center;
     padding: 20px;
     position: relative;
-    bottom: 0;
-    left: -38%; 
-    transform: translate(-50%, 140%);
+    bottom: 300px;
+    left: -38%;
+    transform: translate(140%, 190%);
     font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.rate h4 {
+    color: #1F1D2A;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 2px;
+}
+
+.ui {
+    display: inline-flex;
+    color: #9B948E;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 20px;
+}
+
+.star {
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.star img {
+    width: 20px;
+    height: 20px;
+}
+
+.content1 {
+    justify-content: center;
+    align-items: center;
+}
+
+.noidung {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    color: #1F1D2A;
+}
+
+.logo1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 100px;
+}
+
+.brand>img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 10px; */
+    /* height: 30px; */
+}
+
+.more2 {
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 100px;
+}
+
+.grow {
+    color: var(--black, #1F1D2A);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.start1{
+    display: flex;
+    justify-content: center;
+
+}
+
+.start2{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    right: 8px;
+    font-size: 32px;
+    color: #1F1D2A;
+    text-align: center;
+}
+
+.career {
+    font-size: 32px;
+    color: #1F1D2A;
+    text-align: center;
+    position: relative;
+
+}
+
+.career::after{
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 6px;
+    z-index: 1;
+    background-color: rgba(2, 141, 2, 0.8);
+}
+
+.pics{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-top: 100px;
+}
+
+.teacher1{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 280px;
+}
+
+.teacher1 > img{
+    width: 100%;
+    border-radius: 10px;
+}
+.t2{
+    background: #E38D1E;
+    height: 335px;
+}
+.t3{
+    background: #A08DC4;
+}
+.name{
+    padding:  20px 206px 50px 20px;
+    font-size: 26px;
+    color: #1F1D2A;
+}
+
+.work{
+    padding: 56px 96px 50px 20px;
+    font-size: 16px;
+    color: #9B948E;
 }
