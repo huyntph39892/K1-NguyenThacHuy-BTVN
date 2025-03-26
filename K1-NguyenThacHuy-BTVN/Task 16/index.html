@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Task 16</h1>
+    <script>
+      let input = prompt("nhap km:");
+      let km = parseFloat(input);
+      function taxiBill(km) {
+        if (isNaN(km) || km < 0) {
+          console.log("ko hop le");
+          return;
+        }
+        let bill = 0;
+        if (km <= 1) {
+          bill = 10000;
+        } else if (1 < km <= 30) {
+          bill = 10000 + (km - 1) * 8000;
+        } else {
+          bill = 10000 + 29 * 8000 + (km - 30) * 7000;
+        }
+
+        console.log(bill);
+      }
+      taxiBill(km);
+    </script>
+  </body>
+</html>
