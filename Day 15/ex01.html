@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        tr,
+        th,
+        td {
+            border: 1px solid rgb(20, 17, 192);
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+            
+    <script>
+        // let arr = [1,2 ,,[3,4,[5,6,1,[7]]]]
+        // let arr2 = arr.flat(Infinity)
+        // console.log(arr2);
+        
+        const animals = ["cat", "dog", "bat"];
+/**
+ * forEach callback
+ * input: item, index
+ * output: void
+ * in forEach callback never return anything(undefined)
+*/
+        const result = animals.forEach((item, index)=>{
+            console.log(item, index);
+            return "item + index";
+        })
+        console.log(result); // undefined
+
+        
+        function printAnimals(animals){
+            let content =`<table>
+        <thead>
+            <tr>
+                <th>
+                    STT
+                </th>
+                <th>
+                    Ten loai
+                </th>
+            </tr>
+        </thead>
+        <tbody>`;
+            Array.isArray(animals)&& animals.forEach((item)=>{
+                content += `
+                <tr>
+                        <td>${animals.indexOf(item)+1}</td>
+                        
+                        <td>${item}</td>
+                    </tr>
+                    `
+                    
+            })
+            content += `</tbody>
+                    </table>`
+            document.write(content)
+        }
+        printAnimals(animals);
+    </script>
+</body>
+</html>

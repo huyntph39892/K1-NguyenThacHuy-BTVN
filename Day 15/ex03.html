@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // const arr = [1, 2, 3, 4, 9, -1, 100];
+        // const result =  arr.filter((item, index, arr)=>item< 5)
+        // console.log(result); 
+
+        const students = [
+            {id: 1, name: "Nguyen Thac Huy", age: 21},
+            {id: 2, name: "Duong Truong Giang", age: 22},
+            {id: 3, name: "Dao Anh Tung", age: 21},
+        ]
+        function printStudent(students){
+            const result = students.filter((item)=> item.age <= 21)
+            return result
+        }
+        console.log(printStudent(students)); 
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const animals = [
+            {
+                name: "cat",
+                id: 1,
+            },
+            {
+                name: "dog",
+                id: 2,
+            },
+            {
+                name: "bat",
+                id: 3,
+            }];
+        /** 
+         * *find(): dung find() de tim kiem phan tu trong mang
+         */
+        function findAnimal(animals){
+         if(Array.isArray){
+            const result = animals.find((item, index)=>{
+                return item.name === "catex"
+            })
+            return result; 
+         }
+         return false;
+        }
+
+        function findIndexAnimal(animals){
+            
+                return Array.isArray(animals) && animals.findIndex((item, index)=>{
+                    return item.name === "bat"
+                })
+            }
+            console.log(findAnimal(animals))
+         console.log(findIndexAnimal(animals))
+    </script>
+</body>
+</html>

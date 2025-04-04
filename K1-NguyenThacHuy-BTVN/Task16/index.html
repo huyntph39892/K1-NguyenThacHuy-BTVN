@@ -15,10 +15,11 @@
           document.write("ko hop le");
           // console.log("ko hop le");
           return;
-        } else if (km <= 1) {
+        }
+        if (km <= 1) {
           document.write(`${"can tra 10k"}`);
           return;
-        } else if (km > 1 && km <= 30) {
+        } else if (1 < km <= 30) {
           document.write(
             `so km da di ${km} va tien can tra ${10000 + (km - 1) * 8000}d`
           );

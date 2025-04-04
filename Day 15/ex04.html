@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /**
+         * map() callback
+         *  * input: item, index, array
+         *  * output: tra ve mang da bien doi bang so luong phan tu mang ban dau
+        */
+        const students = [
+            {id: 1, name: "Nguyen Thac Huy", age: 21},
+            {id: 2, name: "Duong Truong Giang", age: 22},
+            {id: 3, name: "Dao Anh Tung", age: 21},
+        ]
+
+        /**
+         * them vao cac phan tu trong mang 1 cap key-value: "role": "student"
+        */
+       const newRole = students.map((item)=>{
+        return{
+            ...item,
+            role: "student"
+        }
+       })
+       console.log(newRole)
+    </script>
+</body>
+</html>

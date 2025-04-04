@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const arr = [1,2,4,8,10]
+
+        const checkEven = arr.some(item=>item%2 === 0) 
+        console.log(checkEven)     
+
+        const students = [
+            {id: 1, name: "Nguyen Thac Huy", gender: "male"}, 
+            {id: 1, name: "Nguyen Thac Huy", gender: "male"}, 
+            {id: 1, name: "Nguyen Thac Huy", gender: "male"}, 
+            {id: 1, name: "Nguyen Thac Huy", gender: "male"}, 
+            // {id: 2, name: "Quynh Anh", gender: "female"}, 
+            // {id: 3, name: "Dao Anh Tung", gender: "other"}, 
+        ]
+
+        const checkGender = students.some((item) => item.gender ==="female")
+        console.log(checkGender)
+
+        const checkGenderMale = students.every((item)=>item.gender==="male")
+        console.log(checkGenderMale)
+    </script>
+</body>
+</html>

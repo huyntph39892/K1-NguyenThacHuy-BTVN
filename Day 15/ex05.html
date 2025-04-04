@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const products = [
+            {id: 1, name: "tomato", price: 1000, quantity: 2},
+            {id: 2, name: "potato", price: 2000, quantity: 3},
+        ]
+
+        const total = products.map((item)=>{
+            return {
+                ...item,
+                total : item.price * item.quantity
+            }
+        })
+        console.log(total)
+    </script>
+</body>
+</html>

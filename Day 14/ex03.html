@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function sum(...rest){
+        //     // console.log(rest);   
+        //     let total = 0;
+        //     for(let i = 0; i < rest.length; i++){
+        //         total += rest[i];
+        //         console.log(total);
+        //     }
+        //     return total;
+        // }
+
+        const people = [
+            {name: "John", weight: 50},
+            {name: "Jane", weight: 60},
+            {name: "Mike", weight: 48},
+            {name: "Mike", weight: 48},
+            {name: "Mike", weight: 48},
+            {name: "Mike", weight: 48},
+            {name: "Mike", weight: 48},
+            {name: "Mike", weight: 48},
+            {name: "Mike", weight: 48},
+            {name: "Mike", weight: 48},
+            {name: "Mike", weight: 48},
+            {name: "Mike", weight: 48},
+            {name: "Mike", weight: 48},
+            {name: "Mike", weight: 48},
+            {name: "Mike", weight: 48},
+            {name: "Mike", weight: 48},
+        ]
+
+        function elevatorSacle(...people){
+            let total = 0;
+            for(let i = 0; i < people.length; i++){
+                total += people[i].weight;
+                
+                // console.log(total);
+            }
+            // if(total > 750){
+            //         console.log(false);
+            //     }
+            //     else{
+            //         console.log(true);
+            //     }
+            return total <= 750;
+            return total;
+        }
+        console.log(elevatorSacle(...people));
+    </script>
+</body>
+</html>
