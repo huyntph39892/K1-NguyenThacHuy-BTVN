@@ -7,31 +7,21 @@
   </head>
   <body>
     <script>
-      const users = [
-        { fullname: "Nguyen Van A", age: 20, address: "LangSon" },
-        { fullname: "Nguyen Van B", age: 22, address: "BacGiang" },
-        { fullname: "Nguyen Van C", age: 21, address: "HaNoi" },
-        { fullname: "Nguyen Van D", age: 22, address: "HaNoi" },
-        { fullname: "Nguyen Van E", age: 32, address: "LangSon" },
-      ];
-      function groupBy(arr, key) {
+      const arrayNumber = [1, 2, 3, 4, 3, 2, 1];
+      function checkSymmetricalArr(arr) {
         if (!Array.isArray(arr)) {
           return false;
         }
-        const result = {};
-        for (let i = 0; i < arr.length; i++) {
-          const value = arr[i][key];
-          if (!result[value]) {
-            result[value] = [];
+        const length = arr.length;
+        for (let i = 0; i < length % 2; i++) {
+          if (arr[i] !== arr[length - 1 - i]) {
+            return false;
           }
-          result[value].push(arr[i]);
         }
-        return result;
+        return true;
       }
-      const result1 = groupBy(users, "age");
-      console.log(result1);
-      const result2 = groupBy(users, "address");
-      console.log(result2);
+      const result = checkSymmetricalArr(arrayNumber);
+      console.log(result);
     </script>
   </body>
 </html>
