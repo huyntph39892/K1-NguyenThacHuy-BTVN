@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /* 
+Đếm tần suất các thuộc tính trong object
+Viết hàm countProperties(obj) nhận vào một object và trả về một object mới chứa tần suất xuất hiện của các thuộc tính trong object đầu vào.
+- Input:
+    + obj: object đầu vào
+- Output:
+    + object mới chứa tần suất xuất hiện của các thuộc tính trong object đầu vào
+- Ví dụ:
+    + Input: {a: 1, b: 2, c: 1, d: 2}
+    + Output: 4
+*/
+      //   const obj = { a: 1, b: 2, c: 1, d: 2 };
+      //   // function countProperties(obj){
+      //   //     indexCount = 0;
+      //   //     for(item in obj){
+      //   //         indexCount++;
+      //   //     }
+      //   //     console.log(indexCount);
+      //   // }
+      //   // countProperties(obj);
+      //   indexCount = 0;
+      //   for (item in obj) {
+      //     indexCount++;
+      //   }
+      //   console.log(indexCount);
+      /* 
+Mã hóa chuỗi (Run-Length Encoding)
+Viết hàm encodeRLE(str) nhận vào một chuỗi và trả về chuỗi đã được mã hóa bằng thuật toán Run-Length Encoding.
+- Input:
+    + str: chuỗi ký tự
+- Output:
+    + Chuỗi đã được mã hóa bằng thuật toán Run-Length Encoding
+- Ví dụ:
+    + Input: "aaabbcccc"
+    + Output: "3a2b4c"
+*/
+      const str = "aaabbcccc";
+      function encodeRLE(str) {
+        let encodeStr = "";
+        let count = 1;
+        for (let i = 0; i < str.length; i++) {
+          if (str[i] === str[i + 1]) {
+            count++;
+          } else {
+            encodeStr += count + str[i];
+            count = 1;
+          }
+        }
+        return encodeStr;
+      }
+      console.log(encodeRLE(str));
+
+      let arr = [1, 2, 2, 3, 3, 3, 4, 4, 4];
+      function findMostFrequent(arr) {
+        let count = 0;
+        for (let i = 0; i < arr.length; i++) {
+          let countTemp = 0;
+          for (let j = 0; j < arr.length; j++) {
+            if (arr[i] === arr[j]) {
+              countTemp++;
+            }
+          }
+          if (countTemp > count) {
+            count = countTemp;
+          }
+        }
+        return count;
+      }
+      console.log(findMostFrequent(arr));
+    </script>
+  </body>
+</html>
