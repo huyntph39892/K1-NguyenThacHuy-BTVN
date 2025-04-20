@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const result = hightlightKeyWord("Học JavaScript không khó, Học JavaScript có CodeFarm lo, CodeFarm - Học là có việc!, JAVASCRIPT", "JavaScript");
+        
+        function hightlightKeyWord(str, keyword) {
+            const regex = new RegExp(`(${keyword})`, 'gi');
+            return str.replace(regex, '<strong style="color: red;">$1</strong>');
+        }
+        document.write(result);
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>DateTime</h1>
+    <script>
+        const now = new Date();
+        // console.log(typeof now); 
+        // console.log(now instanceof Date);
+        // console.log(now)
+
+        console.log({Date})
+        console.log(now.getDate()) // 1-31
+        console.log(now.getDay()) // 0-6 (0: Chủ nhật, 1: Thứ 2, ..., 6: Thứ 7)
+        console.log(now.getFullYear()) // 2023
+        console.log(now.getMonth()) // 0-11 (0: Tháng 1, 1: Tháng 2, ..., 11: Tháng 12)
+        console.log(now.getHours()) // 0-23 (0: 12 AM, 1: 1 AM, ..., 23: 11 PM)
+        console.log(now.getTime()) // Số mili giây từ 1/1/1970
+        console.log(now.getMinutes()) // 0-59
+        console.log(now.getSeconds()) // 0-59
+        console.log(now.getUTCDate()) // 1-31
+        console.log(now.getMilliseconds()) // 0-999
+        console.log(now.toString()) // "Wed Oct 25 2023 09:00:00 GMT+0700 (Giờ Đông Dương)"
+        console.log(now.toLocaleString()) // "10/25/2023, 9:00:00 AM"
+    </script>
+</body>
+</html>
